@@ -47,10 +47,10 @@
             <div>
             <img src="Gemini_Generated_Image_3swjde3swjde3swj.png"
             alt=" Ilustração estilo ícone de uma gota d'água azul rodeada por símbolos matemáticos, incluindo o sinal de somatório ($\Sigma$), símbolo de integral ($\int$), raiz quadrada ($\sqrt{}$), uma fração $f(x)/dt$ e um pequeno gráfico cartesiano.">
+        </div>
             <h2>Gotas estatisticas</h2>
             <P>por- Mateus Fellipe, João Ceccon,Felipe Rocha,Thalita Beatriz e Rafaela Tomaz</P>
             <P>Seja bem vindo ao nosso blog, aqui iremos explicar sobre oque é a matematica da água, como funciona e para oque e usada.</P>
-        </div>
             <H2> Oque é a matematica da água?</H2>
             <P> A matemática da água é a aplicação de conceitos matemáticos para compreender, medir, controlar e planejar o uso da água em diferentes situações. Ela envolve cálculos, análises e modelos que ajudam a entender como a água se comporta na natureza e como pode ser utilizada de forma eficiente e sustentável.
             </P>    
@@ -63,16 +63,24 @@
                     
                     Em resumo, a matemática da água é uma ferramenta essencial para o uso consciente e eficiente dos recursos hídricos. Ao combinar cálculos, medições e análises, ela contribui para o planejamento, a preservação do meio ambiente e a garantia de água para as atuais e futuras gerações.</P>
            <button> ❤️ <spam>0</spam> </button>
+           <button> 👍 <spam>0</spam> </button>
+           <button> 👎 <spam>0</spam> </button>
 
             
         </main>
     </body> 
     <script>
-        const botao = document.querySelector("button");
-        botao.addEventListener("click", botaoclicado);
-        function botaoclicado(){
-            console.log ("fui clicado");
-        }
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach( function(botao){
+            botao.addEventListener("click", botaoclicado);
+            function botaoclicado(){
+                console.log ("fui clicado");
+                let texto = botao.queryselector("spam");
+                texto.textContent++; 
+            }
+
+        })
+       
         
     </script>
     </html>      
